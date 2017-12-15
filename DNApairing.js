@@ -51,19 +51,19 @@ function pairElement(str) {
 
   var charArrays = [];
   
-  for(var i=0; i < element.length; i++) {
+  for(var i = 0; i < element.length; i++) {
     
    if (element[i] === "G"){
-      charArrays.push =(["G", "C"]);
+      charArrays.push(["G", "C"]);
        
      } else if (element[i] === "C") {
-      charArrays.push =(["C", "G"]);
+      charArrays.push(["C", "G"]);
        
      } else if (element[i] === "T") {
-      charArrays.push =(["T", "A"]);
+      charArrays.push(["T", "A"]);
       
       } else if(element[i] === "A") {
-       charArrays.push =(["A", "T"]);
+       charArrays.push(["A", "T"]);
       }
   }
     
@@ -71,4 +71,3 @@ function pairElement(str) {
   return charArrays;
 }
 
-pairElement("CGC");
